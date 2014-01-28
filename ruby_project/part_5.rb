@@ -1,11 +1,11 @@
 def combine_anagrams(words)
-	words.each{
-		|a| a.downcase
-		a = a.chars.sort.join
-		puts a
- 
-	}
-    # your code here
+
+	anagrams = words.group_by { |part| part.chars.sort }.values
+	#first part, splits words into different parts.
+	# for each part you sort the characters 
+	#then group each of the words by their values. and put each of them into their necessary sets 
+	anagrams.each{ |x| print x}
+	print "\n"
 
 end
 
