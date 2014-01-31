@@ -1,6 +1,7 @@
 class Dessert
 
- 	attr_accessor:name #these are inherited to jellybean 
+ 	
+    attr_accessor:name #these are inherited to jellybean 
     attr_accessor:calories
 
     def initialize(name, calories)
