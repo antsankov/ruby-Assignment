@@ -13,3 +13,4 @@ end
 word_count_object = Word_count_class.new()
 
 word_count_object.word_count("A man, a plan, a canal -- Panama")
+word_count_object.word_count("Doo bee doo bee doo")

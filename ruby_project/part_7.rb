@@ -54,3 +54,4 @@ shit = JellyBean.new("james",7, "black licorice")
 test.healthy?
 
 puts shit.delicious?
+puts shit.healthy?
