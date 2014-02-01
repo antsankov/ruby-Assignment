@@ -5,7 +5,7 @@ class Class # worked off of stack http://stackoverflow.com/questions/11604149/in
     attr_name = attr_name.to_s #turns it into a string
     attr_reader attr_name #sets up a reader
     #what this basically does is it inputs the following code as literal ascii characters into the Class starting from the eval function
-    class_eval %Q{ 
+    class_eval %Q{  
       def #{attr_name}_history
         @#{attr_name}_history || [nil] # give default value if not assigned
       end
@@ -25,7 +25,7 @@ end
 
 a = Tester.new
 a.foo = 100
-a.foo = "test"
+a.foo = "I work"
 p a.foo_history # => returns nil, 2, "test"
 
 a = Tester.new

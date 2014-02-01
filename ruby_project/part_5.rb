@@ -5,6 +5,7 @@ def combine_anagrams(words)
 	# for each part you sort the characters 
 	#then group each of the words by their values. and put each of them into their necessary sets 
 	anagrams.each{ |x| print x}
+	#print 
 	print "\n"
 
 end

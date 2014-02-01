@@ -19,3 +19,4 @@ palindrome?("Racecar")
 puts "this should be true"
 palindrome?("Abracadabra")
 puts "this should be false"                       # => false (nil is also ok)
+

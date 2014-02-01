@@ -26,8 +26,8 @@ class Dessert
     end
 end
 
-class JellyBean < Dessert
-	attr_accessor:flavor
+class JellyBean < Dessert #extends deserts
+	attr_accessor:flavor #so it can be accessed/read
 	
     def initialize(name, calories, flavor)
 
@@ -50,8 +50,8 @@ class JellyBean < Dessert
 end
 
 test = Dessert.new("pip",500)
-shit = JellyBean.new("james",7, "black licorice")
+hit = JellyBean.new("james",7, "black licorice")
 test.healthy?
 
-puts shit.delicious?
-puts shit.healthy?
+puts hit.delicious?
+puts hit.healthy?

@@ -1,9 +1,9 @@
-#TODO: FIND OUT HOW TO attach palindrom directly to string	
-class String 
+
+class String #extend string 
 
 	def palindrome?()
 			
-		string = self.downcase.gsub(/[^a-z]/,'')
+		string = self.downcase.gsub(/[^a-z]/,'') #pull out any weird characters  
 		reverse = string.reverse()
 
 		if (string == reverse)
@@ -15,23 +15,10 @@ class String
 			return false
 
 		end
-
-		# else 
-			
-		# array_reverse = string.reverse()
-		# 	if (string == array_reverse)
-
-		# 		return true
-
-		# 	else
-
-		# 		return false
-		# 	end
-		# end
 	end
 end
 
-class Array
+module Enumerable #work with module enumerable
 
 	def palindrome?()
 
