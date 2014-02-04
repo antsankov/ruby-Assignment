@@ -15,6 +15,7 @@ class CartesianProduct
 	def cart_prob()
 		
 		self.set1.each { |x| self.set2.each{|y|  final_set << [x,y]}} #this does two for loops and puts it in litterally
+		
 		print final_set
 	end
 end
